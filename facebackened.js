@@ -7,7 +7,7 @@ let jwt=require("jsonwebtoken")
 let {MongoClient}=require("mongodb")
 //app.use(express.urlencoded({ extended: true }));
 let multer=require("multer")
-//app.use(multer())
+
 path=require("path")
 const nodemailer=require("nodemailer")
 
@@ -344,5 +344,6 @@ let usercolllection=db.collection("details")
   }
 
 })
+
 
 app.listen(8000)
