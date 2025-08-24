@@ -299,8 +299,8 @@ if(await usercolllection.findOne({email:email}))
 
 
 app.post("/sendotp",(req,res)=>{
-  email=req.body.email
-  otp=req.body.otp
+  let email=req.body.email
+  let otp=req.body.otp
   console.log(email)
    transporter=nodemailer.createTransport({
     service:"gmail",
@@ -347,3 +347,4 @@ let usercolllection=db.collection("details")
 
 
 app.listen(8000)
+
